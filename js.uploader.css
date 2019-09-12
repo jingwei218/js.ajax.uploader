@@ -1,0 +1,27 @@
+body {
+    font-family: "consolas";
+}
+
+.drop-zone {
+    min-height: 200px;
+    border: 1px dashed rgb(160, 160, 160);
+}
+
+.file-list > li {
+    border: none;
+}
+
+.uploaded-file-list {
+    list-style: none;
+}
+
+.spinner-border {
+    height: 1rem;
+    width: 1rem;
+}
+
+.fname {
+    width: 10rem;
+    overflow: hidden;
+    cursor: default;
+}

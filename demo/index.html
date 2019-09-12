@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js.uploader.js"></script>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="fa/css/all.min.css" rel="stylesheet">
+    <link href="js.uploader.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="ajax-uploader">
+        <div class="row my-2">
+            <h4>Drop your file here</h4>
+        </div>
+        <div class="row my-2">
+            <div class="col-12 drop-zone" id="drop-zone">
+                <ul class="list-group file-list" id="file-list"></ul>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-12">
+                <input type="button" value="upload" class="btn btn-primary" id="btn-upload" disabled>
+                <input type="button" value="reset" class="btn btn-primary" id="btn-reset" disabled>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h4>Uploaded files</h4>
+            <div class="col-12">
+                <ul class="list-group uploaded-file-list" id="up-file-list"></ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    $(function () {
+        $('#ajax-uploader').ajaxFileUploader();
+    });
+
+</script>
